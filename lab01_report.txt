@@ -1,0 +1,87 @@
+LABORATORY 01 REPORT - ORBITAL OBSERVATION DATA SPACE
+
+1. DIRECTORY STRUCTURE:
+.:
+backup
+data_summary.txt
+lab00_check.txt
+lab01_report.txt
+metadata_catalog
+providers
+
+./backup:
+satA_backup.csv
+
+./metadata_catalog:
+ground_station_metadata.json
+satellite_A_metadata.json
+satellite_B_metadata.json
+
+./providers:
+ground_station
+satellite_A
+satellite_B
+
+./providers/ground_station:
+metadata.json
+observations.csv
+
+./providers/satellite_A:
+metadata.json
+observations.csv
+
+./providers/satellite_B:
+metadata.json
+observations.csv
+
+2. DATASET FILES (observations.csv):
+--- File: providers/ground_station/observations.csv ---
+--- File: providers/satellite_A/observations.csv ---
+2026-03-01T12:00:00,OBJ-001,15.3,7.4
+2026-03-01T12:05:00,OBJ-002,14.9,7.2
+2026-03-01T12:10:00,OBJ-003,15.1,7.5
+--- File: providers/satellite_B/observations.csv ---
+
+3. METADATA FILES:
+--- File: providers/ground_station/metadata.json ---
+{
+  "dataset_name": "ground_station_observations",
+  "provider": "ground_station",
+  "format": "CSV",
+  "description": "Orbital observation dataset",
+  "temporal_resolution": "5 minutes",
+  "data_path": "providers/ground_station/observations.csv"
+}
+--- File: providers/satellite_A/metadata.json ---
+{
+"dataset_name": "satellite_A_observations",
+"provider": "satellite_A",
+"format": "CSV",
+"description": "Orbital observation dataset",
+"temporal_resolution": "5 minutes"
+}
+--- File: providers/satellite_B/metadata.json ---
+{
+  "dataset_name": "satellite_B_observations",
+  "provider": "satellite_B",
+  "format": "CSV",
+  "description": "Orbital observation dataset",
+  "temporal_resolution": "5 minutes",
+  "data_path": "providers/satellite_B/observations.csv"
+}
+
+4. SYSTEM ARCHITECTURE DESCRIPTION:
+The system is a simplified Orbital Observation Data Space (OODS)[cite: 6]. It consists of independent data providers (Satellite A, B, and Ground Station) [cite: 21, 22, 23, 24] and a federated metadata catalog[cite: 30]. Datasets remain stored at the provider nodes to maintain autonomy[cite: 8, 82].
+
+5. ROLE OF THE METADATA CATALOG:
+The catalog aggregates metadata from all providers to enable dataset discovery without centralizing the actual data[cite: 9, 10, 72]. It contains references (data_paths) that allow users to locate and access datasets stored elsewhere[cite: 85, 86, 112].
+
+6. DISCUSSION QUESTIONS ANSWERS:
+Q1: Which components store the actual data?
+A1: The actual data is stored by the independent data providers (Satellite Provider A, Satellite Provider B, and Ground Station Provider)[cite: 8, 113, 117].
+Q2: Which component enables dataset discovery?
+A2: Dataset discovery is enabled by the federated metadata catalog[cite: 72, 111, 118].
+Q3: What advantages does the federated architecture provide?
+A3: It allows datasets to remain stored at independent providers [cite: 8], enables discovery without data centralization [cite: 10], and supports collaboration between multiple independent organizations[cite: 14, 119].
+Q4: What limitations might such a system have?
+A4: Potential limitations include the manual process of registering metadata [cite: 72, 120] and the lack of advanced query capabilities in this minimal version.
