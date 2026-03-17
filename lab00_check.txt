@@ -1,0 +1,50 @@
+Struktura katalogow
+.:
+backup
+data_summary.txt
+lab00_check.txt
+metadata_catalog
+providers
+
+./backup:
+satA_backup.csv
+
+./metadata_catalog:
+
+./providers:
+ground_station
+satellite_A
+satellite_B
+
+./providers/ground_station:
+observations.csv
+
+./providers/satellite_A:
+observations.csv
+
+./providers/satellite_B:
+observations.csv
+
+
+WYNIKI WYSZUKIWANIA OBJ-003
+./backup/satA_backup.csv:2026-03-01T12:10:00,OBJ-003,15.1,7.5
+./providers/satellite_A/observations.csv:2026-03-01T12:10:00,OBJ-003,15.1,7.5
+
+TOTAL RECORDS COUNT
+      0 backup
+     17 data_summary.txt
+     37 lab00_check.txt
+      0 metadata_catalog
+      0 providers
+     54 total
+
+UPRAWNIENIA PLIKÓW
+total 20
+drwxrwxr-x 2 student student 4096 mar 17 13:53 backup
+-rw-rw-r-- 1 student student  435 mar 17 14:01 data_summary.txt
+-rw-rw-r-- 1 student student  658 mar 17 14:06 lab00_check.txt
+drwxrwxr-x 2 student student 4096 mar 17 13:46 metadata_catalog
+drwxrwxr-x 5 student student 4096 mar 17 13:46 providers
+
+PODSUMOWANIE
+Zadania P1-P5 wykonane pomyślnie. Dodano nowy wpis do pliku i zweryfikowano spójność danych.

@@ -1,0 +1,17 @@
+3 providers/satellite_A/observations.csv
+0 providers/satellite_B/observations.csv
+0 providers/ground_station/observations.csv
+
+1 number of occurrences of OBJ-002 in satelitte_A
+0 number of occurrences of OBJ-002 in satelitte_B
+0 number of occurrences of OBJ-002 in ground_station
+
+list of dataset files:
+./providers/ground_station:
+observations.csv
+
+./providers/satellite_A:
+observations.csv
+
+./providers/satellite_B:
+observations.csv
