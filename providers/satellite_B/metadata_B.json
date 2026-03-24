@@ -6,3 +6,4 @@
   "temporal_resolution": "5 minutes",
   "data_path": "providers/satellite_B/observations.csv"
 }
+ 

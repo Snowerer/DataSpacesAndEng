@@ -4,5 +4,5 @@
   "format": "CSV",
   "description": "Orbital observation dataset",
   "temporal_resolution": "5 minutes",
-  "data_path": "providers/satellite_B/observations.csv"
+  "data_path": "providers/satellite_B/observations_B.csv"
 }
