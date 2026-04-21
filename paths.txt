@@ -1,3 +1,0 @@
-providers/ground_station/observations_g.csv
-providers/satellite_A/observations_A.csv
-providers/satellite_B/observations_B.csv
