@@ -1,0 +1,16 @@
+COMPARISON OF FEDERATED ACCESS LAYERS
+
+1. Which access style is easiest to implement?
+REST is the easiest to implement at the provider level. It maps directly to basic HTTP methods and requires minimal setup, making it straightforward for simple service-level data retrieval.
+
+2. Which is best for SQL-style analytical processing?
+DuckDB over HTTP is definitely the best for analytical processing. It allows executing complex aggregations (GROUP BY, COUNT) directly on remote files using native SQL, treating remote CSVs as virtual tables without manual data integration loops.
+
+3. Which is best for object-centric access?
+GraphQL is the best for object-centric queries. It allows the client to specify exactly which fields it needs (e.g., only temperature and timestamp) for a specific object, drastically reducing over-fetching of data.
+
+4. Which introduces the highest architectural complexity?
+GraphQL introduces the highest complexity. It requires designing a unified schema, implementing a dedicated gateway component, and writing resolver functions to translate GraphQL queries into underlying REST calls.
+
+5. Which is closest to a data space or data mesh access layer?
+The GraphQL gateway is the closest to a modern data space layer. It hides the underlying distributed complexity (multiple endpoints, different providers) and provides consumers with a single, semantically unified access point to query the entire ecosystem.

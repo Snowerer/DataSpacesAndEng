@@ -1,0 +1,15 @@
+Odpowiedzi na pytania (Task P8 - Kafka-Style Reflection Task):
+
+1. How the implemented broker differs from Kafka:
+Nasz broker to bardzo prosta aplikacja REST API przechowująca zdarzenia wyłącznie w ulotnej pamięci RAM (pamięć operacyjna list w Pythonie). Konsumenci pobierają dane metodą aktywnego odpytywania (polling), podczas gdy Kafka wykorzystuje zaawansowany protokół binarnego przesyłu, jest rozproszonym logiem zdarzeń opartym na architekturze Publish/Subscribe (Push/Pull optimization).
+
+2. Which Kafka features are missing:
+Brakuje przede wszystkim:
+- Persystencji danych (zapisu na dysk twardy).
+- Partycjonowania i replikacji (brak tolerancji na błędy i skalowalności poziomej).
+- Zarządzania offsetami konsumentów (nasz konsument za każdym razem czyta wszystko od początku).
+- Mechanizmu retencji zdarzeń (np. kasowania starszych niż 7 dni).
+- Zookeepera/Kraft do rozproszonego konsensusu klastra.
+
+3. What would need to be added to make the architecture closer to a real streaming platform:
+Trzeba by dodać logowanie zdarzeń na dysku z gwarancjami trwałości (append-only logs), podział na tzw. "topics" i "partitions", mechanizm zapamiętywania offsetów, co umożliwiłoby konsumentom kontynuowanie czytania po awarii bez duplikowania odczytów, a także klastrowanie i obsługę asynchronicznego przesyłania danych (np. WebSockets, gRPC lub strumienie binarne).
