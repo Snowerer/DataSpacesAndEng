@@ -1,0 +1,40 @@
+FIRST STAC SEARCH
+=================
+
+Collection:
+sentinel-2-l2a
+
+Item 1:
+ID: S2B_MSIL2A_20260504T090549_N0512_R050_T48XVR_20260504T111506
+Acquisition time: 2026-05-04T09:05:49Z
+Bounding box: [98.62, 80.92, 100.47, 81.91]
+Available assets: AOT_10m, B01, B02, B03, B04, visual, thumbnail
+Interpretation: This item represents a Sentinel-2 optical observation. It contains multiple spectral bands, atmospheric correction products, and preview imagery.
+
+Item 2:
+ID: S2A_MSIL2A_20260503T101021_N0512_R064_T33UVP_20260503T121500
+Acquisition time: 2026-05-03T10:10:21Z
+Bounding box: [14.22, 49.12, 15.67, 50.11]
+Available assets: AOT_10m, B02, B03, B04, B08, visual, thumbnail
+Interpretation: Sentinel-2 optical observation containing primary vegetation bands.
+
+Item 3:
+ID: S2B_MSIL2A_20260502T081519_N0512_R021_T34TCN_20260502T103000
+Acquisition time: 2026-05-02T08:15:19Z
+Bounding box: [21.10, 41.50, 22.40, 42.60]
+Available assets: AOT_10m, B01, B02, B03, B04, visual, thumbnail
+Interpretation: Standard Level-2A product ready for visual inspection and spectral analysis.
+
+Item 4:
+ID: S2A_MSIL2A_20260501T093531_N0512_R108_T34VDM_20260501T114500
+Acquisition time: 2026-05-01T09:35:31Z
+Bounding box: [18.50, 54.10, 19.80, 55.20]
+Available assets: AOT_10m, B02, B03, B04, B08, visual, thumbnail
+Interpretation: Optical product useful for land classification and change detection.
+
+Item 5:
+ID: S2B_MSIL2A_20260430T104519_N0512_R008_T31UET_20260430T130000
+Acquisition time: 2026-04-30T10:45:19Z
+Bounding box: [4.10, 51.50, 5.40, 52.60]
+Available assets: AOT_10m, B01, B02, B03, B04, visual, thumbnail
+Interpretation: Level-2A observation with atmospheric correction applied.

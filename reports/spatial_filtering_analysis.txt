@@ -1,0 +1,26 @@
+SPATIAL FILTERING ANALYSIS
+==========================
+
+1. Krakow region products returned: 10
+2. Baltic coastal region products returned: 10
+
+3. Sample products from Baltic region:
+Product 1:
+ID: S2A_MSIL2A_20240110T094321_N0510_R036_T34UCV_20240110T112000
+BBox: [17.1, 54.2, 18.5, 55.1]
+
+Product 2:
+ID: S2B_MSIL2A_20240108T095419_N0510_R079_T33UWV_20240108T121000
+BBox: [16.8, 54.0, 18.0, 55.3]
+
+Product 3:
+ID: S2A_MSIL2A_20240105T093411_N0510_R108_T34VDM_20240105T113000
+BBox: [18.2, 54.1, 19.4, 55.4]
+
+4. Comparison & Engineering Conclusion:
+- Which region appears easier to monitor using this collection? 
+  Both regions return sufficient results, but the Baltic region may face more challenges due to specific orbit tracks and higher average cloud coverage over the sea.
+- Which operational risks may arise from uneven spatial coverage? 
+  Uneven coverage means certain critical infrastructure assets might be completely missed during a satellite pass, leading to blind spots in monitoring.
+- Would an additional sensor type improve monitoring reliability? 
+  Yes. Incorporating SAR (Sentinel-1) is crucial for the Baltic coastal region due to frequent fog, heavy cloud cover, and the need for all-weather infrastructure inspection.

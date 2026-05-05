@@ -1,0 +1,21 @@
+FEDERATION SUMMARY
+==================
+
+1. Products returned by each query:
+- Query 1 (Optical southern Poland): 10
+- Query 2 (Optical Baltic region): 8
+- Query 3 (Radar southern Poland): 12
+
+2. Duplicates removed: 0
+3. Total number of unique products: 30
+4. Earliest observation: 2024-01-01T...
+5. Latest observation: 2024-01-10T...
+6. Collections represented: sentinel-2-l2a, sentinel-1-grd
+
+ENGINEERING CONCLUSION:
+- Which sensor appears more operationally reliable?
+  Sentinel-1 (SAR) appears more reliable. Because it is an active radar sensor, it provides consistent data regardless of cloud cover and illumination, whereas Sentinel-2 is heavily dependent on weather conditions.
+- Which region appears easier to monitor?
+  Southern Poland appears slightly easier as it returned more observations in this specific time window, though weather conditions in winter generally make optical monitoring difficult everywhere in Europe.
+- Does multi-sensor federation improve mission robustness?
+  Absolutely. By combining optical imagery (for detailed spectral analysis) with radar imagery (for guaranteed all-weather acquisition), the operational system guarantees data continuity even when one sensor type fails due to weather or orbital geometry.
