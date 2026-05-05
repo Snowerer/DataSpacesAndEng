@@ -1,0 +1,21 @@
+PYTHON STAC RESULTS
+===================
+
+Sample Output:
+Product ID: S2B_MSIL2A_20240110T094321_N0510_R036_T34UCV_20240110T112000
+Acquisition time: 2024-01-10T09:43:21Z
+Satellite: S2B
+Tile identifier: T34UCV
+Available assets: 18
+
+Engineering Analysis:
+- How many products were returned? 
+  5 products were returned based on the limit parameter in the JSON payload.
+- Do all products come from the same satellite? 
+  No, the results are a mix of different satellites from the same constellation (e.g., S2A and S2B).
+- Do all products have the same acquisition time? 
+  No, each observation has a distinct acquisition timestamp reflecting different orbital passes.
+- Do the products correspond to different spatial tiles? 
+  Yes, as this was a global query, products cover completely different geographic regions (different MGRS tiles).
+- Why is Python-based querying more useful than manual curl for repeated discovery? 
+  Python allows for automated parsing of complex STAC JSON responses, logic-based filtering, error handling, and seamless integration into larger data engineering pipelines. 'curl' is only good for quick manual checks.

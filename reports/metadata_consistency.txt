@@ -1,0 +1,23 @@
+METADATA CONSISTENCY REPORT
+===========================
+Total items checked: 41
+Items with complete core metadata: 41
+Items with missing optional EO metadata: 11
+
+Common fields:
+id
+collection
+bbox
+geometry
+properties.datetime
+assets
+links
+
+Fields missing in some items:
+properties.eo:cloud_cover
+properties.sat:orbit_state
+
+Interpretation:
+The catalog is structurally consistent at STAC level (all core fields are present in 100% of items), but observation-specific metadata differs between collections. For example, 'eo:cloud_cover' is present in optical observations (Sentinel-2) but completely absent in radar observations (Sentinel-1) since radar penetrates clouds. 
+
+This means that cross-collection processing pipelines should not assume that all quality or sensor fields are always available.

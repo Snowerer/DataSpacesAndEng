@@ -1,0 +1,15 @@
+DATA SPACE QUERY REPORT
+Generated at: 2026-04-21 00:19:15
+
+[GLOBAL STATISTICS]
+Total observations: Distinct objects: 
+[OBJECT ANALYSIS: OBJ-003]
+Providers containing object:
+Total observations: 
+[FEDERATED QUERY COMPARISON]
+FULL RESULT: 
+FEDERATED RESULT: 
+COMPLETE: NO
+
+[SCHEMA VALIDATION]
+Schema consistency: CONSISTENT
