@@ -1,0 +1,15 @@
+MULTI-OBSERVATION NDVI COMPARISON REPORT
+========================================
+
+Scena 1 (Niskie zachmurzenie):
+  Średnie NDVI: 0.3650
+  Piksele wysokiej roślinności (NDVI > 0.5): 7563
+
+Scena 2 (Wysokie zachmurzenie):
+  Średnie NDVI: 0.2813
+  Piksele wysokiej roślinności (NDVI > 0.5): 5493
+
+WNIOSKI INŻYNIERSKIE:
+- Chmury drastycznie spłaszczają wartości NDVI w okolice zera (tutaj ~0.03 w rejonie chmury).
+- Wysokie zachmurzenie fałszuje statystyki, ukrywając realną roślinność pod spodem.
+- Przed podaniem danych do modeli klasyfikacji AI niezbędne jest filtrowanie jakościowe.

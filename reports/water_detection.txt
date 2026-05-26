@@ -1,0 +1,11 @@
+RAPORT DETEKCJI OBSZARÓW WODNYCH
+================================
+
+Reguła detekcji: NDVI < 0.0
+Liczba pikseli sklasyfikowanych jako woda: 2510
+Liczba pikseli lądu/roślinności: 87490
+Procentowy udział zbiorników wodnych: 2.79%
+
+INTERPRETACJA INŻYNIERSKA:
+- Ujemne wartości NDVI skutecznie wskazują otwartą wodę, lecz mogą też reagować na głębokie cienie.
+- Maska ta stanowi świetny produkt wejściowy (labeling) do dalszego uczenia maszynowego (AI).
