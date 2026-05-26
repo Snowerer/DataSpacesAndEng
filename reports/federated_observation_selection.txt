@@ -1,0 +1,21 @@
+RAPORT Z DECYZJI FEDEROWANEGO WYBORU SENSORÓW
+============================================
+
+Scenariusz operacyjny: NORMAL
+-----------------------------------
+ - Sentinel-2 Optical: 120 pkt
+ - Sentinel-1 SAR (Radar): 90 pkt
+Rekomendacja systemu: [ Sentinel-2 Optical ]
+
+Scenariusz operacyjny: CLOUDY
+-----------------------------------
+ - Sentinel-2 Optical: 20 pkt
+ - Sentinel-1 SAR (Radar): 130 pkt
+Rekomendacja systemu: [ Sentinel-1 SAR (Radar) ]
+
+Scenariusz operacyjny: NIGHT
+-----------------------------------
+ - Sentinel-2 Optical: 0 pkt
+ - Sentinel-1 SAR (Radar): 130 pkt
+Rekomendacja systemu: [ Sentinel-1 SAR (Radar) ]
+

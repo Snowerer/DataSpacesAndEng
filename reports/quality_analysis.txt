@@ -1,0 +1,19 @@
+PRODUCT 1:
+ID: S2A_MSIL2A_20240110T094321_N0510_R036_T34UCV_20240110T112000
+TIME: 2024-01-10T09:43:21Z
+CLOUD COVER: 12.5
+
+PRODUCT 2:
+ID: S2B_MSIL2A_20240108T095419_N0510_R079_T33UWV_20240108T121000
+TIME: 2024-01-08T09:54:19Z
+CLOUD COVER: 85.2
+
+ENGINEERING CONCLUSION:
+- Which product would be selected for mission analysis?
+  Product 1 (cloud cover 12.5%) would be selected as the target area is mostly visible and usable for visual interpretation, change detection, or AI pipelines.
+- Which product would be rejected?
+  Product 2 (cloud cover 85.2%) would be rejected. The high cloud coverage makes the optical observation operationally useless for surface monitoring.
+- At what cloud level does optical imagery become operationally risky?
+  Imagery becomes risky and often requires aggressive masking when cloud cover exceeds 20-30%, especially if the clouds are directly over the Area of Interest (AOI).
+- Would SAR imagery improve mission reliability?
+  Yes, SAR (e.g., Sentinel-1) is completely unaffected by cloud cover and daylight, making it essential for guaranteed data acquisition during bad weather conditions.

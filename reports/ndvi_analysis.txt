@@ -1,0 +1,16 @@
+ANALIZA WSKAŹNIKA NDVI
+======================
+
+Plik wejściowy macierzy: results/ndvi/ndvi.npy
+Wygenerowana wizualizacja: results/ndvi/ndvi_map.png
+
+Minimalne NDVI: -0.6000
+Maksymalne NDVI: 0.8668
+Średnie NDVI: 0.3286
+
+Liczba pikseli gęstej roślinności (NDVI > 0.5): 9742
+Liczba pikseli o ujemnym wskaźniku (NDVI < 0): 2510
+
+INTERPRETACJA INŻYNIERSKA:
+- Piksele NDVI > 0.5 wskazują na zdrową pokrywę roślinną.
+- Piksele ujemne odzwierciedlają sztuczny zbiornik wodny absorpcyjny dla podczerwieni.

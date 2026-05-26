@@ -1,0 +1,9 @@
+MONITORING SERII CZASOWEJ NDVI
+=============================
+
+Data: 2024-04-01 -> Średnia wartość NDVI: 0.3667
+Data: 2024-05-01 -> Średnia wartość NDVI: 0.4776
+Data: 2024-06-01 -> Średnia wartość NDVI: 0.5634
+
+Całkowita zmiana indeksu: +0.1968
+Wykryty trend: increasing vegetation activity

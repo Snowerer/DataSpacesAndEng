@@ -1,0 +1,19 @@
+RAPORT INSPEKCJI RASTRÓW
+========================
+
+Ścieżka pliku: assets/bands/B04_10m.tif
+Szerokość (Width): 300 px
+Wysokość (Height): 300 px
+Liczba pasm (Bands): 1
+Układ współrzędnych (CRS): EPSG:4326
+Zasięg przestrzenny (Bounds): BoundingBox(left=19.0, bottom=50.97, right=19.03, top=51.0)
+----------------------------------------
+
+Ścieżka pliku: assets/bands/B08_10m.tif
+Szerokość (Width): 300 px
+Wysokość (Height): 300 px
+Liczba pasm (Bands): 1
+Układ współrzędnych (CRS): EPSG:4326
+Zasięg przestrzenny (Bounds): BoundingBox(left=19.0, bottom=50.97, right=19.03, top=51.0)
+----------------------------------------
+

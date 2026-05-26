@@ -1,0 +1,22 @@
+STATYSTYKI SPEKTRALNE PASM
+==========================
+
+Pasmo: B04_10m
+  Minimum: 212.89
+  Maksimum: 2182.31
+  Średnia (Mean): 1192.27
+  Odchylenie standardowe (STD): 252.11
+
+Pasmo: B08_10m
+  Minimum: 200.00
+  Maksimum: 4570.79
+  Średnia (Mean): 2459.44
+  Odchylenie standardowe (STD): 582.06
+
+INTERPRETACJA INŻYNIERSKA:
+1. Które pasmo zawiera większe średnie wartości?
+   Odp: Pasmo B08 (bliska podczerwień) ma wyższą średnią.
+2. Dlaczego roślinność zachowuje się inaczej w obu pasmach?
+   Odp: Zdrowa roślinność pochłania światło czerwone (B04), a odbija bliską podczerwień (B08).
+3. Dlaczego te różnice są ważne dla obliczania NDVI?
+   Odp: Kontrast między odbiciem a absorpcją pozwala jednoznacznie zidentyfikować żywą roślinność.

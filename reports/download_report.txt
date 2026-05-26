@@ -1,0 +1,5 @@
+DOWNLOAD REPORT
+===============
+Product ID: S2A_MSIL2A_20240129T094241_N0510_R036_T34UDB_20240129T130753
+Total downloaded assets: 0
+Total skipped/unsupported assets: 4
