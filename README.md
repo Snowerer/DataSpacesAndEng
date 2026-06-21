@@ -20,3 +20,7 @@ Zaimplementowałem katalog w formie lekkiej aplikacji webowej wspierającej filt
 1. Sklonuj repozytorium.
 2. Otwórz plik `index.html` w dowolnej przeglądarce internetowej.
 3. Użyj paska wyszukiwania, aby filtrować zasoby po tagach (np. "night", "radar").
+
+https://github.com/Snowerer/DataSpacesAndEng/pull/8
+
+https://1drv.ms/v/c/5ce081fa7d99e90f/IQCC7HckMsGuTaceuXpK5f6UAdD6zsPnSqUeEO0fN5QSnHo?e=cQnWeR
