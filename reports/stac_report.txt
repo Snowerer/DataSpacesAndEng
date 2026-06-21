@@ -1,0 +1,10 @@
+STAC REPORT
+Total items: 41
+Collections: sentinel-1-grd, sentinel-2-l2a
+Duplicate items removed: 0
+Failed queries: 0
+Empty search regions: 0
+Assets available: thumbnail, product_metadata
+Temporal coverage: 2024-01-01 / 2024-01-10
+Spatial coverage: Multiple Regions (Southern Poland, Baltic Coastal)
+Metadata completeness score: 100%

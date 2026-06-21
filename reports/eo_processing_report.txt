@@ -1,0 +1,33 @@
+ZBIORCZY RAPORT PRZETWARZANIA EO (EARTH OBSERVATION)
+====================================================
+
+1. STATUS GENEROWANIA ZASOBÓW:
+   - B04: dostępny (assets/bands/B04_10m.tif)
+   - B08: dostępny (assets/bands/B08_10m.tif)
+   - NDVI: dostępny (results/ndvi/ndvi.npy)
+   - NDVI map: dostępny (results/ndvi/ndvi_map.png)
+
+2. METADANE TECHNICZNE RASTRÓW:
+   - Pasmo B04: Rozmiar: 300x300 px, Pasma: 1, CRS: EPSG:4326
+   - Pasmo B08: Rozmiar: 300x300 px, Pasma: 1, CRS: EPSG:4326
+
+3. STATYSTYKI RADIOMETRYCZNE PASM SPEKTRALNYCH:
+   - Czerwień (B04): Min: 212.89, Max: 2182.31, Średnia: 1192.27
+   - Bliska Podczerwień (B08): Min: 200.00, Max: 4570.79, Średnia: 2459.44
+
+4. WYNIKI ANALIZY INDEKSU ROŚLINNOŚCI (NDVI):
+   - Statystyki NDVI: Min: -0.6000, Max: 0.8668, Średnia: 0.3286
+   - Ocena Środowiskowa: Niskie zagęszczenie roślinności, dominacja powierzchni nieożywionych lub wody.
+
+5. REKOMENDACJA Z SILNIKA RANKINGOWEGO:
+OBSERVATION RANKING REPORT
+==========================
+
+1. ID: S2A_MSIL2A_20240129T094241_N0510_R036_T34UCB_20240129T130753
+   Time: 2024-01-29T09:42:41.024000Z
+   Cloud cover: 0.0
+   Assets count: 47
+   Cloud score: 100.00
+   Completeness score: 30.00
+   Recency score: 20.00
+   Final score: 150.00

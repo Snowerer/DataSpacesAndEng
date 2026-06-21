@@ -1,0 +1,27 @@
+ASSET ANALYSIS
+==============
+
+PRODUCT 1: S2B_MSIL2A_20260505T083559_N0512_R064_T41XMG_20260505T112731
+Total available assets: 47
+Visual asset: thumbnail, visual
+Scientific data asset: B04 (Red band), B08 (NIR band), AOT_10m
+Metadata asset: product_metadata, inspire_metadata
+
+Selected Scientific Asset: B04
+- File format: image/tiff; application=geotiff
+- Resolution: 10 meters
+- Authentication required: Yes (roles/copernicus-catalog)
+
+PRODUCT 2: S2A_MSIL2A_20260503T101021_N0512_R064_T33UVP_20260503T121500
+Total available assets: 47
+Visual asset: thumbnail, visual
+Scientific data asset: B02 (Blue band), B11 (SWIR band)
+Metadata asset: datastrip_metadata
+
+ENGINEERING CONCLUSION:
+- Which product appears more useful for scientific analysis?
+  Both products provide the same set of scientific assets (spectral bands). Any product containing raw scientific data assets (like B04, B08) is highly useful for scientific and AI-based analysis.
+- Which product appears more useful for quick operational inspection?
+  Both are equally useful, provided we use the "visual" or "thumbnail" assets for fast dashboard rendering without downloading heavy GeoTIFFs.
+- Which product would you choose for an AI-based monitoring pipeline?
+  I would choose the products and extract purely the 10m spatial resolution assets (like B02, B03, B04, B08) for training computer vision models, ignoring preview images.

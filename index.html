@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Federated EO Data Space - Flood Monitoring</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f9; }
+        h1 { color: #333; }
+        .search-box { margin-bottom: 20px; padding: 10px; width: 100%; max-width: 400px; font-size: 16px; }
+        .card-container { display: flex; flex-wrap: wrap; gap: 20px; }
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); width: 300px; }
+        .card h2 { margin-top: 0; color: #0056b3; font-size: 1.2em; }
+        .tag { display: inline-block; padding: 5px 10px; margin: 5px 0; background: #e2e8f0; border-radius: 15px; font-size: 0.85em; }
+        .provider { font-weight: bold; color: #555; }
+    </style>
+</head>
+<body>
+
+    <h1>Federated EO Data Space</h1>
+    <p>National Flood Monitoring and Early Warning Service Database</p>
+    
+    <input type="text" id="searchInput" class="search-box" placeholder="Search resources (e.g., radar, night, Sentinel)..." onkeyup="filterResources()">
+
+    <div class="card-container" id="resourceList">
+        <div class="card" data-keywords="sentinel-1 radar night cloudy flood extent esa copernicus">
+            <h2>Sentinel-1</h2>
+            <p class="provider">Provider: ESA / Copernicus</p>
+            <span class="tag">Radar (SAR)</span> <span class="tag">Night-time</span> <span class="tag">Cloud-penetrating</span>
+            <p><strong>Purpose:</strong> Primary tool for flood extent assessment during cloudy conditions and night-time operations.</p>
+            <a href="https://dataspace.copernicus.eu/" target="_blank">Access Resource</a>
+        </div>
+
+        <div class="card" data-keywords="sentinel-2 optical high resolution flood mapping esa copernicus">
+            <h2>Sentinel-2</h2>
+            <p class="provider">Provider: ESA / Copernicus</p>
+            <span class="tag">Optical</span> <span class="tag">High-Resolution</span>
+            <p><strong>Purpose:</strong> Detailed flood mapping and post-disaster damage assessment (requires cloud-free conditions).</p>
+            <a href="https://dataspace.copernicus.eu/" target="_blank">Access Resource</a>
+        </div>
+
+        <div class="card" data-keywords="copernicus ems emergency mapping rapid response warning">
+            <h2>Copernicus EMS</h2>
+            <p class="provider">Provider: Copernicus Emergency Management Service</p>
+            <span class="tag">Emergency Service</span> <span class="tag">Rapid Mapping</span>
+            <p><strong>Purpose:</strong> Provides on-demand detailed maps for emergency response activities and early warning.</p>
+            <a href="https://emergency.copernicus.eu/" target="_blank">Access Resource</a>
+        </div>
+        
+        <div class="card" data-keywords="eumetsat weather forecasting precipitation early warning">
+            <h2>EUMETSAT Meteosat</h2>
+            <p class="provider">Provider: EUMETSAT</p>
+            <span class="tag">Meteorological</span> <span class="tag">Early Warning</span>
+            <p><strong>Purpose:</strong> Real-time weather monitoring and extreme precipitation forecasting for early warning.</p>
+            <a href="https://eoportal.eumetsat.int/" target="_blank">Access Resource</a>
+        </div>
+    </div>
+
+    <script>
+        function filterResources() {
+            let input = document.getElementById('searchInput').value.toLowerCase();
+            let cards = document.getElementsByClassName('card');
+
+            for (let i = 0; i < cards.length; i++) {
+                let keywords = cards[i].getAttribute('data-keywords');
+                if (keywords.includes(input)) {
+                    cards[i].style.display = "block";
+                } else {
+                    cards[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
